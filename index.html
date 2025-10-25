@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h3>Shiv Rane | Backend Developer</h3>
+        <p>Profound in building scalable and robust solution. Has experience building microservices, optimizing API responses, optimizing database queries</p>
+        <ul class="social-links">
+            <li><a href="www.linkedin.com/in/shivrane">Linkedin</a></li>
+            <li><a href="https://github.com/shiv-rane">Github</a></li>
+        </ul>
+     <a href="resume.pdf" download="ShivRane_Resume.pdf" class="resume-btn">
+        Wget Resume
+    </a>
+    </div>
+    <div class="experience">
+        <h3>Work Experience</h3>
+        <h5>TRIPSAVERZ | Java Developer</h5>
+        <ul>
+            <li>Constructed and fine-tuned an ELK pipeline (Filebeat, Logstash, Elasticsearch, Kibana) to store and visualize 
+            Spring Boot logs for monitoring and analytics </li>
+            <li>Implemented Apache Kafka for real-time event streaming with fault tolerance and asynchronous inter-service 
+            communication. </li>
+            <li>Developed a rule-engine powered notification microservice in Spring Boot, enabling dynamic business logic 
+            execution and reducing hard-coded dependencies.</li>
+            <li>Optimized API performance by implementing caching mechanisms in Spring Boot, reducing average response 
+            time by 20%</li>
+        </ul>
+    </div>
+    <div class="projects">
+        <h3>Projects</h3>
+        <div class="analytics">
+            <h5>Tyndall</h5>
+            <p>Built a production level platform which allows intraday traders to analyze their overall performance.</p>
+            <button>more info</button>
+        </div>
+        <div class="autotrade">
+            <h5>Auto trading microservice</h5>
+            <p>Built a bot to provide buy sell signal base on rsi pullback strategy on candles data fetched by websocket from binance.</p>
+            <button>more info</button>
+        </div>
+        <div class="auth-api">
+            <h5>Secure User Authentication API </h5>
+            <p>Built a production-ready OTP authentication API using Spring Boot, JWT RS256, and Redis — ready to plug into any secure backend system.</p>
+            <button>more info</button>
+        </div>
+        <div class="email">
+            <h5>AI based email reply generator</h5>
+            <p>Developed an AI-driven backend tool to auto-generate professional email replies using Gemini API.</p>
+            <button>more info</button>
+        </div>
+    </div>
+
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h4 id="popup-title"></h4>
+            <p id="popup-details"></p>
+        </div>
+    </div>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background-color: #111;
+    color: #33ff66;
+    font-family: "Courier New", monospace;
+}
+
+.header,
+.experience,
+.projects,
+.projects > div {
+    border: 1px solid #33ff66;
+}
+
+.social-links a {
+    color: #33ff66;
+    text-decoration: underline;
+}
+
+.resume-btn {
+    display: block; 
+    background: transparent;
+    border: 1px solid #33ff66;
+    color: #33ff66;
+    padding: 6px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center; 
+    width: fit-content; 
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.experience {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.projects {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 70px;
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.projects > div {
+    position: relative;
+    flex: 1 1 280px;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    padding: 1rem;
+}
+
+.projects p {
+    padding-left: 20px;
+}
+.projects button{
+    display: block; 
+    background: transparent;
+    border: 1px solid #33ff66;
+    color: #33ff66;
+    cursor: pointer;
+    position: absolute; 
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    background: transparent;
+    border: 1px solid #33ff66;
+    padding: 4px 10px;
+}
+.popup-overlay {
+  display: none;       
+  position: fixed;
+  inset: 0;               
+  background: rgba(0,0,0,.75);
+  align-items: center;
+  justify-content: center;
+}
