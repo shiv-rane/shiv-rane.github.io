@@ -92,12 +92,34 @@ body {
     padding: 4px 10px;
 }
 .popup-overlay {
-  display: none;       
+  display: none;
   position: fixed;
-  inset: 0;               
-  background: rgba(0,0,0,.75);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
   align-items: center;
   justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #111;
+  border: 1px solid #33ff66;
+  color: #33ff66;
+  padding: 20px;
+  width: 50%;
+  max-width: 500px;
+  font-family: "Courier New", monospace;
+  position: relative;
+}
+.popup-content ul {
+  list-style-type: square;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.popup-content li {
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 .popup-close {
