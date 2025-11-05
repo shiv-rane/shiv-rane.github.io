@@ -148,17 +148,26 @@ body {
 }
 
 .footer {
+  position: relative;
   text-align: center;
   color: #33ff66;
   font-family: monospace;
+  font-size: 14px;
   margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .blink {
   display: inline-block;
-  width: 5px;
-  background: #33ff66;
+  width: 8px;
+  height: 16px;
+  background-color: #33ff66;
   margin-left: 3px;
-  animation: blink 1s steps(1) infinite;
+  animation: blink 1s steps(1, start) infinite;
+  vertical-align: middle;
 }
 
 @keyframes blink {
