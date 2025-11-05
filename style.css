@@ -146,3 +146,21 @@ body {
   background: #33ff66;
   color: #111;
 }
+
+.footer {
+  text-align: center;
+  color: #33ff66;
+  font-family: monospace;
+  margin-top: 50px;
+}
+.blink {
+  display: inline-block;
+  width: 5px;
+  background: #33ff66;
+  margin-left: 3px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
